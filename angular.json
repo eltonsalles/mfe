@@ -14,7 +14,7 @@
           "builder": "@angular-builders/custom-webpack:browser",
           "options": {
             "customWebpackConfig": {
-              "path": "webpack.config.js"
+              "path": "./webpack.config.js"
             },
             "outputPath": "dist/mfe",
             "index": "src/index.html",
@@ -51,7 +51,7 @@
             "development": {
               "buildOptimizer": false,
               "optimization": false,
-              "vendorChunk": true,
+              "vendorChunk": false,
               "extractLicenses": false,
               "sourceMap": true,
               "namedChunks": true
@@ -62,7 +62,8 @@
         "serve": {
           "builder": "@angular-builders/custom-webpack:dev-server",
           "options": {
-            "browserTarget": "mfe:build"
+            "browserTarget": "mfe:build",
+            "liveReload": false
           },
           "configurations": {
             "production": {
