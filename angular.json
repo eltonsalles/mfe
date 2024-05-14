@@ -30,7 +30,9 @@
             "styles": [
               "src/styles.css"
             ],
-            "scripts": []
+            "scripts": [
+              "./node_modules/@webcomponents/scoped-custom-element-registry/scoped-custom-element-registry.min.js"
+            ]
           },
           "configurations": {
             "production": {
